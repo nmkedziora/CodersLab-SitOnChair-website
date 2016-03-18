@@ -1,5 +1,5 @@
 body {
-	font-family: ralewayregular;
+	font-family: ralewayregular, Verdana, sans-serif;
 }
 
 header {
@@ -14,11 +14,12 @@ header {
 
 
 .container {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
     padding: 0 30px;
 }
 
+/* ========== Header ========== */
 .header__logo {
     float: left;
     font-size: 15px;
@@ -39,6 +40,7 @@ header {
     display: inline-block;
 }
 
+/* ========== Hero Section ========== */
 .hero {
     height: 400px;
     background-color: lightgrey;
@@ -65,8 +67,22 @@ header {
     width: 47%;
     height: 100%;
     display: inline-block;
+    vertical-align: top;
 }
 
+.hero__text h1 {
+    font-size: 28px;
+}
+
+.hero__text p {
+    font-size: 14px;
+}
+
+.hero__text a {
+    font-size: 14px;
+}
+
+/* ========== Info Section ========== */
 .info {
     height: 300px;
     background-color: lightblue;
