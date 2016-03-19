@@ -345,11 +345,88 @@ div.pricing__box:nth-child(2) {
 }
 
 .pricing__box--highlighted .btn__highliht {
-    font-size: 21px;
-    background-color: #FFF;
-    color: #26c7a9;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 40px;
-    border-radius: 5px;
+  font-size: 21px;
+  background-color: #FFF;
+  color: #26c7a9;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+/* ========== Contact Section ========== */
+.contact {
+  height: 580px;
+  background-color: #FFF;
+}
+
+.form__input {
+  float: left;
+  width: 640px;
+  height: 365px;
+}
+
+.form__input input {
+  width: 640px;
+  height: 70px;
+  font-size: 28px;
+  margin-bottom: 19px;
+  border: 1px solid #26c7a9;
+}
+
+.form__input textarea {
+  width: 640px;
+  height: 190px;
+  font-size: 28px;
+  border: 1px solid #26c7a9;
+}
+
+.form__submit {
+  float: right;
+  width: 355px;
+  height: 365px;
+}
+
+form img {
+  padding: 0 45px 25px 45px;
+}
+
+form input[type="checkbox"] {
+  width: 50px;
+  height: 50px;
+  font-size: 21px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+form label {
+  width: 285px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+form input[type="submit"] {
+  width: 355px;
+  background-color: #26c7a9;
+  border: 0;
+  color: #FFF;
+  font-size: 26px;
+  text-transform: uppercase;
+  padding: 15px 0;
+  font-family: 'ralewaybold', Verdana, sans-serif;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+/* ========== Footer ========== */
+footer {
+  height: 70px;
+  background-color: grey;
+}
+
+.footer__logo {
+  font-size: 15px;
+  text-transform: uppercase;
 }
