@@ -262,10 +262,11 @@ div.pricing__box:nth-child(2) {
 }
 
 .pricing__name {
+  width: 340px;
   position: absolute;
   top: 30px;
-  left: 120px;
-  color: #26c7a9
+  color: #26c7a9;
+  text-align: center;
 }
 
 .pricing__circle {
@@ -323,10 +324,12 @@ div.pricing__box:nth-child(2) {
     margin-right: 35px;
     margin-top: 75px;
     position: relative;
+    background-color: #26c7a9;
 }
 
-.highlight__background {
+.pricing__box--highlighted .outer__circle {
   background-color: #26c7a9;
+  border: 1px solid #26c7a9;
 }
 
 .pricing__box--highlighted .inner__circle {
@@ -341,7 +344,7 @@ div.pricing__box:nth-child(2) {
   background-color: #FFF;
 }
 
-.btn__regular {
+.pricing__box--highlighted .btn__highliht {
     font-size: 21px;
     background-color: #FFF;
     color: #26c7a9;
