@@ -360,6 +360,10 @@ div.pricing__box:nth-child(2) {
   background-color: #FFF;
 }
 
+form {
+  margin-top: 50px;
+}
+
 .form__input {
   float: left;
   width: 640px;
@@ -372,6 +376,7 @@ div.pricing__box:nth-child(2) {
   font-size: 28px;
   margin-bottom: 19px;
   border: 1px solid #26c7a9;
+  box-shadow: 5px 5px 10px #f0f0f0;
 }
 
 .form__input textarea {
@@ -379,6 +384,7 @@ div.pricing__box:nth-child(2) {
   height: 190px;
   font-size: 28px;
   border: 1px solid #26c7a9;
+  box-shadow: 5px 5px 10px #f0f0f0;
 }
 
 .form__submit {
@@ -423,10 +429,22 @@ form input[type="submit"] {
 /* ========== Footer ========== */
 footer {
   height: 70px;
-  background-color: grey;
+  background-color: #FFF;
+  color: #808080;
+}
+
+.copyrights {
+  float: left;
+  width: 740px;
+}
+
+.social__icons {
+  float: left;
 }
 
 .footer__logo {
+  float: right;
   font-size: 15px;
   text-transform: uppercase;
+  font-family:'ralewaybold', Verdana, sans-serif;
 }
