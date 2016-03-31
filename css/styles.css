@@ -61,12 +61,24 @@ header {
     text-transform: uppercase;
 }
 
-.header__nav li {
+.header__nav > ul > li {
     display: inline-block;
+		vertical-align: top;
     font-family: 'ralewaybold', Verdana, sans-serif;
     margin-left: 25px;
     color: #FFF;
+		position: relative;
 }
+
+.header__nav > ul > li > ul {
+	display: none;
+	color: #26c7a9;
+	padding-top: 15px;
+	position: absolute;
+	width: 300px;
+}
+
+
 
 /* ========== Hero Section ========== */
 .hero {
@@ -125,7 +137,7 @@ header {
     line-height: 32px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 25%;
 }
 
 .hero__text p {
