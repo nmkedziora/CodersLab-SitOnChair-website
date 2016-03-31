@@ -32,4 +32,34 @@ document.addEventListener("DOMContentLoaded", function (){
     });
   }
 
-});
+////// Zadanie 3 - Slider //////
+  var currentImage = document.querySelector(".hero__image");
+  var prevImage = document.querySelector(".arrow_left");
+  var nextImage = document.querySelector(".arrow_right");
+
+  var visibleBackgroundIndex = 0;
+  var backgrounds = [
+    "url('./images/black_chair.png')",
+    "url('./images/red.png')",
+    "url('./images/orange.png')"
+  ];
+
+
+  prevImage.addEventListener("click", function (event) {
+    visibleBackgroundIndex--;
+
+    if (visibleBackgroundIndex < 0) {
+      visibleBackgroundIndex = backgrounds.length - 1;
+    }
+    currentImage.style.backgroundImage = backgrounds[visibleBackgroundIndex];
+  });
+
+  nextImage.addEventListener("click", function (event) {
+    visibleBackgroundIndex++;
+
+    if (visibleBackgroundIndex >= listItems.length) {
+      visibleBackgroundIndex = 0;
+    }
+    currentImage.style.backgroundImage = backgrounds[visibleBackgroundIndex];
+  });
+}); // DOMContentLoaded

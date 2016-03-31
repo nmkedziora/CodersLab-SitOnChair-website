@@ -109,6 +109,7 @@ header {
 .arrow_left span,
 .arrow_right span {
     font-family: 'ralewayregular', Verdana, sans-serif;
+		cursor: pointer;
 }
 
 .arrow_right span {
