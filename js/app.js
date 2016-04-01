@@ -91,49 +91,56 @@ document.addEventListener("DOMContentLoaded", function (){
     transport: 200
   }
 
-var orderSum = 0;
+  var totalCost = {
+    type: 0,
+    color: 0,
+    fabric: 0,
+    transport: 0
+  }
 
 
   transportCheckbox.addEventListener("click", function (event) {
     if (transportCheckbox.checked === true) {
       tableRows[4].children[0].innerHTML = "Transport";
-      tableRows[4].children[1].innerHTML = costs.transport + "zł";
+      tableRows[4].children[1].innerHTML = costs.transport;
+      totalCost.transport = costs.transport;
+    } else {
+      tableRows[4].children[0].innerHTML = "&nbsp";
+      tableRows[4].children[1].innerHTML = "&nbsp";
+      totalCost.transport = 0;
     }
+    tableRows[1].children[1].innerHTML = orderSum();
   });
 
 // chair type
   formSelects[0].addEventListener("change", function (event) {
     tableRows[0].children[0].innerHTML = this.value;
     tableRows[0].children[1].innerHTML = costs[this.value];
+    totalCost.type = costs[this.value];
+    tableRows[1].children[1].innerHTML = orderSum();
   });
 
 // chair color
   formSelects[1].addEventListener("change", function (event) {
     tableRows[2].children[0].innerHTML = this.value;
     tableRows[2].children[1].innerHTML = costs[this.value];
+    totalCost.color = costs[this.value];
+    tableRows[1].children[1].innerHTML = orderSum();
   })
 
 // chair fabric
   formSelects[2].addEventListener("change", function (event) {
     tableRows[3].children[0].innerHTML = this.value;
     tableRows[3].children[1].innerHTML = costs[this.value];
+    totalCost.fabric = costs[this.value];
+    tableRows[1].children[1].innerHTML = orderSum();
   })
 
   orderForm.addEventListener("submit", function (event) {
     event.preventDefault();
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  function orderSum () {
+    return totalCost.type + totalCost.color + totalCost.fabric + totalCost.transport;
+  }
 }); // DOMContentLoaded
