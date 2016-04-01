@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function (){
   }
 
 ////// Zadanie 3 - Slider //////
+// Zdecydowałam się na pracę na background-image, ponieważ nie ma animacji do slidera
   var currentImage = document.querySelector(".hero__image");
   var prevImage = document.querySelector(".arrow_left");
   var nextImage = document.querySelector(".arrow_right");
