@@ -472,6 +472,11 @@ section.order > .container > form > div:nth-child(2) {
   font-size: 21px;
 }
 
+.order__summary td:first-child {
+  width: 60%;
+  text-transform: capitalize;
+}
+
 .order__summary input[type="submit"] {
   width: 80%;
   margin: 30px 10%;
