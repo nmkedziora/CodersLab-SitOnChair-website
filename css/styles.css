@@ -256,7 +256,7 @@ header {
 
 /* ========== Pricing Section - Box ========== */
 .pricing__box {
-    width: 340px;
+    width: 32%;
     height: 500px;
     border: 1px solid #d3d2d9;
     display: inline-block;
@@ -267,8 +267,8 @@ header {
 }
 
 section.pricing > .container > div:nth-child(3) {
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .box__header {
@@ -324,7 +324,7 @@ section.pricing > .container > div:nth-child(3) {
 }
 
 .pricing__options {
-  width: 338px;
+  width: 100%;
   position: absolute;
   top: 250px;
   text-align: center;
