@@ -26,6 +26,10 @@
 
 }
 
+* {
+	outline: 1px solid black;
+}
+
 body {
 	font-family: 'ralewayregular', Verdana, sans-serif;
 }
@@ -85,7 +89,6 @@ header {
 /* ========== Hero Section ========== */
 .hero {
     height: 500px;
-    background-color: lightgrey;
     font-size: 0;
     background-color: #fafafa;
     background: rgba(250,250,250,1);
@@ -248,7 +251,7 @@ header {
 }
 
 .long_hr {
-    width: 340px;
+    width: 32%;
     color: #26c7a9;
     border: 3px solid #26c7a9;
     margin: 5px 0 20px 0;
@@ -391,13 +394,98 @@ section.pricing > .container > div:nth-child(3) {
   border-radius: 5px;
 }
 
+/* ========== Order Section ========== */
+.order {
+    height: 500px;
+    background-color: #f0f0f0;
+}
+
+.order form {
+	height: 500px;
+}
+
+.order form > div {
+	width: 31%;
+	height: 100%;
+	display: inline-block;
+	font-size: 0;
+  vertical-align: top;
+}
+
+.order__details .long_hr,
+.order__summary .long_hr {
+width: 70%;
+margin-bottom: 50px;
+}
+
+.order__details select {
+  font-size: 21px;
+  display: block;
+  width: 100%;
+  height: 70px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border: 1px solid #26c7a9;
+  box-shadow: 5px 5px 10px #f0f0f0;
+  background-color: #FFF;
+}
+
+.order__details input[type="checkbox"] {
+  width: 50px;
+  height: 50px;
+  font-size: 21px;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 15px;
+}
+
+.order__details label {
+  width: 285px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+section.order > .container > form > div:nth-child(2) {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.order__img {
+	background-image: url('../images/red_chair.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+}
+
+.order__summary .section__title {
+  text-align: right;
+}
+
+.order__summary .long_hr {
+  margin-left: 30%;
+}
+
+.order__summary table {
+  width: 100%;
+  font-size: 21px;
+}
+
+.order__summary input[type="submit"] {
+  width: 80%;
+  margin: 30px 10%;
+}
+
+
+
 /* ========== Contact Section ========== */
 .contact {
   height: 580px;
   background-color: #FFF;
 }
 
-form {
+.contact form {
   margin-top: 50px;
 }
 
@@ -433,11 +521,11 @@ form {
   height: 365px;
 }
 
-form img {
+.form__submit img {
   padding: 0 45px 25px 45px;
 }
 
-form input[type="checkbox"] {
+.form__submit input[type="checkbox"] {
   width: 50px;
   height: 50px;
   font-size: 21px;
@@ -445,7 +533,7 @@ form input[type="checkbox"] {
   vertical-align: top;
 }
 
-form label {
+.form__submit label {
   width: 285px;
   display: inline-block;
   vertical-align: top;
@@ -453,7 +541,7 @@ form label {
   font-size: 20px;
 }
 
-form input[type="submit"] {
+input[type="submit"] {
   width: 355px;
   background-color: #26c7a9;
   border: 0;

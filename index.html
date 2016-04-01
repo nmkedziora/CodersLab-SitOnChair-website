@@ -163,6 +163,80 @@
       </div> <!-- .container -->
     </section>
 
+		<!-- Order Section -->
+		<section class="order">
+			<div class="container">
+				<form>
+					<div class="order__details">
+						<div class="section__title">
+		          Skomponuj swoje krzesło
+		          <hr class="long_hr">
+		        </div>
+
+						<select name="chair_type">
+							<option value="" disabled selected hidden>Wybierz rodzaj</option>
+							<option value="clair">Clair</option>
+							<option value="margarita">Margarita</option>
+							<option value="selena">Selena</option>
+						</select>
+						<select name="chair_color">
+							<option value="" diasbled selected hidden>Wybierz Kolor</option>
+							<option value="red">Czerwony</option>
+							<option value="black">Czarny</option>
+							<option value="orange">Pomarańczowy</option>
+						</select>
+						<select name="chair_fabric">
+							<option value="" diasbled selected hidden>Wybierz Materiał</option>
+							<option value="material">Tkanina</option>
+							<option value="leather">Skóra</option>
+						</select>
+						<label>
+							<input type="checkbox" name="transportation" value="yes">
+							Transport
+						</label>
+					</div>
+
+					<div class="order__img"></div>
+
+					<div class="order__summary">
+						<div class="section__title">
+		          Podsumowanie
+		          <hr class="long_hr">
+		        </div>
+						<table>
+							<thead>
+								<tr>
+									<td>Twój fotel</td>
+									<td>Puste</td>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr id="sum">
+									<td></td>
+									<td></td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr id="color">
+									<td></td>
+									<td></td>
+								</tr>
+								<tr id="fabric">
+									<td></td>
+									<td></td>
+								</tr>
+								<tr id="transportation">
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+						<input type="submit" value="Zamawiam">
+					</div>
+				</form>
+			</div>
+		</section>
+
     <!-- Contact Section-->
     <section class="contact">
       <div class="container">
