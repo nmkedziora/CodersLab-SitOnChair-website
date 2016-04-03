@@ -506,6 +506,7 @@ section.order > .container > form > div:nth-child(2) {
   background-color: #FFF;
   font-family: 'ralewayregular', Verdana, sans-serif;
   color: #808080;
+  padding: 10px;
 }
 
 .order__summary td {
