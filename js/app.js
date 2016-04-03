@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function (){
     transport: 200
   }
 
+// total cost, that is being inserted into SUMA field
   var totalCost = {
     type: 0,
     color: 0,
@@ -99,25 +100,13 @@ document.addEventListener("DOMContentLoaded", function (){
   }
 
 
-  transportCheckbox.addEventListener("click", function (event) {
-    if (transportCheckbox.checked === true) {
-      tableRows[4].children[0].innerHTML = "Transport";
-      tableRows[4].children[1].innerHTML = costs.transport;
-      totalCost.transport = costs.transport;
-    } else {
-      tableRows[4].children[0].innerHTML = "&nbsp";
-      tableRows[4].children[1].innerHTML = "&nbsp";
-      totalCost.transport = 0;
-    }
-    tableRows[1].children[1].innerHTML = orderSum();
-  });
 
 // chair type
   formSelects[0].addEventListener("change", function (event) {
-    tableRows[0].children[0].innerHTML = this.value;
-    tableRows[0].children[1].innerHTML = costs[this.value];
-    totalCost.type = costs[this.value];
-    tableRows[1].children[1].innerHTML = orderSum();
+    tableRows[0].children[0].innerHTML = this.value;         // takes chair type value from select
+    tableRows[0].children[1].innerHTML = costs[this.value];  // updates chair type cost in form using costs object
+    totalCost.type = costs[this.value];                      // updates type cost in totalCost object using chosen type value from costs object
+    tableRows[1].children[1].innerHTML = orderSum();         // puts current sum into SUMA row
   });
 
 // chair color
@@ -136,10 +125,25 @@ document.addEventListener("DOMContentLoaded", function (){
     tableRows[1].children[1].innerHTML = orderSum();
   })
 
+  transportCheckbox.addEventListener("click", function (event) {
+    if (transportCheckbox.checked === true) {                 // if checkbox is checked
+      tableRows[4].children[0].innerHTML = "Transport";       // puts "Transport" text into transport row
+      tableRows[4].children[1].innerHTML = costs.transport;   // puts transport value from costs object into transport row
+      totalCost.transport = costs.transport;                  // updates totalCost object with transport value from costs object
+    } else {                                                  // else
+      tableRows[4].children[0].innerHTML = "&nbsp";           // leaves transport row empty
+      tableRows[4].children[1].innerHTML = "&nbsp";
+      totalCost.transport = 0;                                // and updates transport value in totalCost object
+    }
+    tableRows[1].children[1].innerHTML = orderSum();          // puts current sum into SUMA row
+  });
+
+// prevent form from being sent
   orderForm.addEventListener("submit", function (event) {
     event.preventDefault();
   });
 
+// function that returns total cost for totalCost object
   function orderSum () {
     return totalCost.type + totalCost.color + totalCost.fabric + totalCost.transport;
   }
