@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function (){
 // function that returns total cost for totalCost object
   function orderSum () {
     if (totalCost.type + totalCost.color + totalCost.fabric + totalCost.transport !== 0) {
-      return totalCost.type + totalCost.color + totalCost.fabric + totalCost.transport;
+      return totalCost.type + totalCost.color + totalCost.fabric + totalCost.transport + " zł";
     } else {
       return "";
     }
