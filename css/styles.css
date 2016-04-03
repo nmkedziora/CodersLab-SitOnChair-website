@@ -394,12 +394,12 @@ section.pricing > .container > div:nth-child(3) {
 
 /* ========== Order Section ========== */
 .order {
-    height: 500px;
+    height: 550px;
     background-color: #f0f0f0;
 }
 
 .order form {
-	height: 500px;
+	height: 100%;
 }
 
 .order form > div {
@@ -417,32 +417,39 @@ margin-bottom: 50px;
 }
 
 .order__details select {
-  font-size: 21px;
+  cursor: pointer;
   display: block;
   width: 100%;
   height: 70px;
-  font-size: 28px;
   margin-bottom: 20px;
   border: 1px solid #26c7a9;
   box-shadow: 5px 5px 10px #f0f0f0;
   background-color: #FFF;
+  padding-left: 15px;
+  font-family: 'ralewayregular', Verdana, sans-serif;
+  color: #999;
+  font-size: 32px;
 }
 
+
 .order__details input[type="checkbox"] {
+  cursor: pointer;
   width: 50px;
   height: 50px;
   font-size: 21px;
   display: inline-block;
   vertical-align: baseline;
   margin-right: 15px;
+  margin-top: 25px;
 }
 
 .order__details label {
-  width: 285px;
+  width: auto;
   display: inline-block;
   vertical-align: top;
-  font-size: 20px;
-  margin-top: 15px;
+  font-size: 32px;
+  color: #808080;
+  margin-top: 35px;
 }
 
 section.order > .container > form > div:nth-child(2) {
@@ -467,7 +474,16 @@ section.order > .container > form > div:nth-child(2) {
 
 .order__summary table {
   width: 100%;
-  font-size: 21px;
+  font-size: 28px;
+  background-color: #FFF;
+  font-family: 'ralewayregular', Verdana, sans-serif;
+  color: #808080;
+}
+
+.order__summary td {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
 }
 
 .order__summary td:first-child {
@@ -475,10 +491,32 @@ section.order > .container > form > div:nth-child(2) {
   text-transform: capitalize;
 }
 
+.order__summary td:nth-child(2n) {
+  color: #26c7a9;
+  border-left: 1px solid #EFEFEF;
+}
+
+.order__summary thead {
+  font-family: 'ralewaybold', Verdana, sans-serif;
+  color: #26c7a9;
+}
+
+.order__summary tfoot td {
+  border-top: 1px solid #EFEFEF;
+  padding-top: 20px;
+}
+
+.order__summary tfoot td:nth-child(2n) {
+  font-family: 'ralewaybold', Verdana, sans-serif;
+  border-left: none;
+}
+
 .order__summary input[type="submit"] {
   width: 80%;
   margin: 30px 10%;
 }
+
+
 
 
 
@@ -506,6 +544,7 @@ section.order > .container > form > div:nth-child(2) {
   margin-bottom: 19px;
   border: 1px solid #26c7a9;
   box-shadow: 5px 5px 10px #f0f0f0;
+  font-family: 'ralewayregular', Verdana, sans-serif;
 }
 
 .form__input textarea {
@@ -516,6 +555,7 @@ section.order > .container > form > div:nth-child(2) {
   font-size: 28px;
   border: 1px solid #26c7a9;
   box-shadow: 5px 5px 10px #f0f0f0;
+  font-family: 'ralewayregular', Verdana, sans-serif;
 }
 
 .form__submit {
@@ -529,6 +569,7 @@ section.order > .container > form > div:nth-child(2) {
 }
 
 .form__submit input[type="checkbox"] {
+  cursor: pointer;
   width: 50px;
   height: 50px;
   font-size: 21px;

@@ -125,6 +125,7 @@ document.addEventListener("DOMContentLoaded", function (){
     tableRows[1].children[1].innerHTML = orderSum();
   })
 
+// checkbox
   transportCheckbox.addEventListener("click", function (event) {
     if (transportCheckbox.checked === true) {                 // if checkbox is checked
       tableRows[4].children[0].innerHTML = "Transport";       // puts "Transport" text into transport row
@@ -145,6 +146,10 @@ document.addEventListener("DOMContentLoaded", function (){
 
 // function that returns total cost for totalCost object
   function orderSum () {
-    return totalCost.type + totalCost.color + totalCost.fabric + totalCost.transport;
+    if (totalCost.type + totalCost.color + totalCost.fabric + totalCost.transport !== 0) {
+      return totalCost.type + totalCost.color + totalCost.fabric + totalCost.transport;
+    } else {
+      return "";
+    }
   }
 }); // DOMContentLoaded
